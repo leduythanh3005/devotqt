@@ -68,6 +68,7 @@ textarea {
 a {
   color: #000;
   transition: all .3s ease;
+  text-decoration: none;
 }
 
 body {
