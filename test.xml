@@ -6,150 +6,63 @@
             Tiêu đề trang web
         </title>
         <link crossorigin='anonymous' href='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css' integrity='sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ' rel='stylesheet'/>
-        <link href="assets/css/master.css" rel="stylesheet">
+        <link href="https://raw.githubusercontent.com/leduythanh3005/devotqt/main/assets/css/master.css" rel="stylesheet"/>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.0/jquery.min.js"></script>
         <b:skin><![CDATA[
              /* Chỗ này để viết CSS */ 
         ]]></b:skin>
+        <style>
+            body{
+                background: #1f1d2b;
+                color: #7f8090;
+            }
+            ul,li{
+                list-style: none;
+            }
+            .wrapper{
+                display: flex;
+                max-width: 1400px;
+                margin: auto;
+            }
+            .sidebar{
+                width: 20%;
+            }
+            .content{
+                width: 80%;
+                display: flex;
+            }
+            .content aside{
+                width: 20%;
+            }
+        </style>
     </head>
     <body>
-        <div class='wrapper'>
-            <!-- sidebar navigation component -->
-            <nav class='active' id='sidebar'>
-                <div class='sidebar-header'>
-                    <img alt='bootraper logo' class='app-logo' src='assets/img/bootstraper-logo.png'/>
+        <div class="wrapper">
+            <nav class="sidebar">
+                <div class="logo">
+                    <h1>Logo</h1>
                 </div>
-                <ul class='list-unstyled components text-secondary'>
-                    <li>
-                        <a href='dashboard.html'><i class='fas fa-home'/>Dashboard</a>
-                    </li>
-                    <li>
-                        <a href='forms.html'><i class='fas fa-file-alt'/>Forms</a>
-                    </li>
-                    <li>
-                        <a href='tables.html'><i class='fas fa-table'/>Tables</a>
-                    </li>
-                    <li>
-                        <a href='charts.html'><i class='fas fa-chart-bar'/>Charts</a>
-                    </li>
-                    <li>
-                        <a href='icons.html'><i class='fas fa-icons'/>Icons</a>
-                    </li>
-                    <li>
-                        <a aria-expanded='false' class='dropdown-toggle no-caret-down' data-bs-toggle='collapse' href='#uielementsmenu'><i class='fas fa-layer-group'/>UI Elements</a>
-                        <ul class='collapse list-unstyled' id='uielementsmenu'>
-                            <li>
-                                <a href='ui-buttons.html'><i class='fas fa-angle-right'/>Buttons</a>
-                            </li>
-                            <li>
-                                <a href='ui-badges.html'><i class='fas fa-angle-right'/>Badges</a>
-                            </li>
-                            <li>
-                                <a href='ui-cards.html'><i class='fas fa-angle-right'/>Cards</a>
-                            </li>
-                            <li>
-                                <a href='ui-alerts.html'><i class='fas fa-angle-right'/>Alerts</a>
-                            </li>
-                            <li>
-                                <a href='ui-tabs.html'><i class='fas fa-angle-right'/>Tabs</a>
-                            </li>
-                            <li>
-                                <a href='ui-date-time-picker.html'><i class='fas fa-angle-right'/>Date Time Picker</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a aria-expanded='false' class='dropdown-toggle no-caret-down' data-bs-toggle='collapse' href='#authmenu'><i class='fas fa-user-shield'/>Authentication</a>
-                        <ul class='collapse list-unstyled' id='authmenu'>
-                            <li>
-                                <a href='login.html'><i class='fas fa-lock'/>Login</a>
-                            </li>
-                            <li>
-                                <a href='signup.html'><i class='fas fa-user-plus'/>Signup</a>
-                            </li>
-                            <li>
-                                <a href='forgot-password.html'><i class='fas fa-user-lock'/>Forgot password</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a aria-expanded='false' class='dropdown-toggle no-caret-down' data-bs-toggle='collapse' href='#pagesmenu'><i class='fas fa-copy'/>Pages</a>
-                        <ul class='collapse list-unstyled' id='pagesmenu'>
-                            <li>
-                                <a href='blank.html'><i class='fas fa-file'/>Blank page</a>
-                            </li>
-                            <li>
-                                <a href='404.html'><i class='fas fa-info-circle'/>404 Error page</a>
-                            </li>
-                            <li>
-                                <a href='500.html'><i class='fas fa-info-circle'/>500 Error page</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <li>
-                        <a href='users.html'><i class='fas fa-user-friends'/>Users</a>
-                    </li>
-                    <li>
-                        <a href='settings.html'><i class='fas fa-cog'/>Settings</a>
-                    </li>
+                <span>Menu</span>
+                <ul class="menu">
+                    <li><i class="fad fa-home"></i><a href="#">Menu1</a></li>
+                    <li><i class="fad fa-home"></i><a href="#">Menu1</a></li>
+                    <li><i class="fad fa-home"></i><a href="#">Menu1</a></li>
+                    <li><i class="fad fa-home"></i><a href="#">Menu1</a></li>
+                    <li><i class="fad fa-home"></i><a href="#">Menu1</a></li>
+                    <li><i class="fad fa-home"></i><a href="#">Menu1</a></li>
+                    <li><i class="fad fa-home"></i><a href="#">Menu1</a></li>
                 </ul>
             </nav>
-            <!-- end of sidebar component -->
-            <div class='active' id='body'>
-                <!-- navbar navigation component -->
-                <nav class='navbar navbar-expand-lg navbar-white bg-white'>
-                    <button class='btn btn-light' id='sidebarCollapse' type='button'>
-                        <i class='fas fa-bars'/><span/>
-                    </button>
-                    <div class='collapse navbar-collapse' id='navbarSupportedContent'>
-                        <ul class='nav navbar-nav ms-auto'>
-                            <li class='nav-item dropdown'>
-                                <div class='nav-dropdown'>
-                                    <a aria-expanded='false' class='nav-item nav-link dropdown-toggle text-secondary' data-bs-toggle='dropdown' href='#' id='nav1'>
-                                        <i class='fas fa-link'/> <span>Quick Links</span> <i class='fas fa-caret-down' style='font-size: .8em;'/>
-                                    </a>
-                                    <div aria-labelledby='nav1' class='dropdown-menu dropdown-menu-end nav-link-menu'>
-                                        <ul class='nav-list'>
-                                            <li><a class='dropdown-item' href=''><i class='fas fa-list'/> Access Logs</a></li>
-                                            <div class='dropdown-divider'/>
-                                            <li><a class='dropdown-item' href=''><i class='fas fa-database'/> Back ups</a></li>
-                                            <div class='dropdown-divider'/>
-                                            <li><a class='dropdown-item' href=''><i class='fas fa-cloud-download-alt'/> Updates</a></li>
-                                            <div class='dropdown-divider'/>
-                                            <li><a class='dropdown-item' href=''><i class='fas fa-user-shield'/> Roles</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                            <li class='nav-item dropdown'>
-                                <div class='nav-dropdown'>
-                                    <a aria-expanded='false' class='nav-item nav-link dropdown-toggle text-secondary' data-bs-toggle='dropdown' href='#' id='nav2'>
-                                        <i class='fas fa-user'/> <span>John Doe</span> <i class='fas fa-caret-down' style='font-size: .8em;'/>
-                                    </a>
-                                    <div class='dropdown-menu dropdown-menu-end nav-link-menu'>
-                                        <ul class='nav-list'>
-                                            <li><a class='dropdown-item' href=''><i class='fas fa-address-card'/> Profile</a></li>
-                                            <li><a class='dropdown-item' href=''><i class='fas fa-envelope'/> Messages</a></li>
-                                            <li><a class='dropdown-item' href=''><i class='fas fa-cog'/> Settings</a></li>
-                                            <div class='dropdown-divider'/>
-                                            <li><a class='dropdown-item' href=''><i class='fas fa-sign-out-alt'/> Logout</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </li>
-                        </ul>
-                    </div>
-                </nav>
-                <!-- end of navbar navigation -->
-                <div class='content'>
-                    <div class='container-fluid'>
-                        <div class='page-title'>
-                            <h3>Blank Page</h3>
-                        </div>
-                    </div>
-                </div>
+            <div class="content">
+                <b:section class='main' id='main' showaddelement='yes'>
+                    <b:widget id='Blog1' locked='true' title='Bài đăng trên Blog' type='Blog'></b:widget>
+                </b:section>
+                <aside>
+                    <h2>asdasdasdasd</h2>
+                </aside>
             </div>
         </div>
         <b:section class='navbar' id='navbar' maxwidgets='1' showaddelement='yes'/>
         <script crossorigin='anonymous' integrity='sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe' src='https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js'/>
-</body>
+    </body>
 </html>
